@@ -79,3 +79,7 @@ D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\obj\Debug\Quan_L
 D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\obj\Debug\Quan_Ly_San_Bong.csproj.AssemblyReference.cache
 D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\obj\Debug\Quan_Ly_San_Bong.Admin_fLogin.resources
 D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\obj\Debug\Quan_Ly_San_Bong.fDeposit.resources
+D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\bin\Debug\EntityFramework.dll
+D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\bin\Debug\EntityFramework.SqlServer.dll
+D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\bin\Debug\EntityFramework.xml
+D:\MonHoc\.HK1_2022\CD1\.DoAn\Quan_Ly_San_Bong\Quan_Ly_San_Bong\bin\Debug\EntityFramework.SqlServer.xml

@@ -33,6 +33,8 @@ namespace Quan_Ly_San_Bong
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lSignUp = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new Quan_Ly_San_Bong.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +73,27 @@ namespace Quan_Ly_San_Bong
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(178, 462);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Chưa có tài khoản?";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // lSignUp
+            // 
+            this.lSignUp.AutoSize = true;
+            this.lSignUp.Location = new System.Drawing.Point(330, 462);
+            this.lSignUp.Name = "lSignUp";
+            this.lSignUp.Size = new System.Drawing.Size(66, 20);
+            this.lSignUp.TabIndex = 5;
+            this.lSignUp.TabStop = true;
+            this.lSignUp.Text = "Sign Up";
+            this.lSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lSignUp_LinkClicked);
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.SlateBlue;
@@ -96,6 +119,8 @@ namespace Quan_Ly_San_Bong
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(252)))), ((int)(((byte)(191)))));
             this.ClientSize = new System.Drawing.Size(498, 647);
+            this.Controls.Add(this.lSignUp);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
@@ -119,6 +144,8 @@ namespace Quan_Ly_San_Bong
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
         private RJButton btnLogin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel lSignUp;
     }
 }
 

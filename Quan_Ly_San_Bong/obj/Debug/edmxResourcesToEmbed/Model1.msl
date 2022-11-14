@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Management_FootballPitchModelStoreContainer" CdmEntityContainer="Management_FootballPitchEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="id_account" ColumnName="id_account" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="account_balance" ColumnName="account_balance" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="date_crate" ColumnName="date_crate" />
+          <ScalarProperty Name="permission" ColumnName="permission" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id_user_info" ColumnName="id_user_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deposit_Invoice">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Deposit_Invoice">
+        <MappingFragment StoreEntitySet="Deposit_Invoice">
+          <ScalarProperty Name="id_deposit_voice" ColumnName="id_deposit_voice" />
+          <ScalarProperty Name="date_deposit" ColumnName="date_deposit" />
+          <ScalarProperty Name="deposit_amount" ColumnName="deposit_amount" />
+          <ScalarProperty Name="id_account" ColumnName="id_account" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id_time_slot" ColumnName="id_time_slot" />
+          <ScalarProperty Name="id_f_pitch" ColumnName="id_f_pitch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Football_Pitch">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Football_Pitch">
+        <MappingFragment StoreEntitySet="Football_Pitch">
+          <ScalarProperty Name="id_f_pitch" ColumnName="id_f_pitch" />
+          <ScalarProperty Name="name_pitch" ColumnName="name_pitch" />
+          <ScalarProperty Name="type_pitch" ColumnName="type_pitch" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="default_price" ColumnName="default_price" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Football_Pitch_State_By_Time">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Football_Pitch_State_By_Time">
+        <MappingFragment StoreEntitySet="Football_Pitch_State_By_Time">
+          <ScalarProperty Name="id_pitch_state_by_time" ColumnName="id_pitch_state_by_time" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="price_by_time" ColumnName="price_by_time" />
+          <ScalarProperty Name="id_time_slot" ColumnName="id_time_slot" />
+          <ScalarProperty Name="id_f_pitch" ColumnName="id_f_pitch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="id_invoice" ColumnName="id_invoice" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="invoice_date" ColumnName="invoice_date" />
+          <ScalarProperty Name="pay_day" ColumnName="pay_day" />
+          <ScalarProperty Name="id_deposit_voice" ColumnName="id_deposit_voice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Time_Slot">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.Time_Slot">
+        <MappingFragment StoreEntitySet="Time_Slot">
+          <ScalarProperty Name="id_time_slot" ColumnName="id_time_slot" />
+          <ScalarProperty Name="time_slot1" ColumnName="time_slot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Info">
+      <EntityTypeMapping TypeName="Management_FootballPitchModel.User_Info">
+        <MappingFragment StoreEntitySet="User_Info">
+          <ScalarProperty Name="id_user_info" ColumnName="id_user_info" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2354e8af405474fb37b4a84539bb2d7" Name="Diagram1">
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Account" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Deposit_Invoice" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Football_Pitch" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Football_Pitch_State_By_Time" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Invoice" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.Time_Slot" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Management_FootballPitchModel.User_Info" Width="1.5" PointX="1.5" PointY="11.375" IsExpanded="true" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Account__id_user__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Deposit_Invoice__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Deposit_I__id_f___31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Deposit_I__id_ti__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Invoice__id_depo__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Football___id_f___2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="Management_FootballPitchModel.FK__Football___id_ti__2D27B809" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

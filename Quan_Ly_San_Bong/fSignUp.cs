@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quan_Ly_San_Bong.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -95,9 +96,39 @@ namespace Quan_Ly_San_Bong
             }
         }
 
-
+        // Sự kiện sign up
         private void rjButton1_Click(object sender, EventArgs e)
         {
+            string username = txtUser.Text;
+            string password = txtPassword.Text;
+            string phone = txtPhone.Text;
+            string config_password = txtRePassword.Text;
+
+            if (username == "Username" | password == "Password" | config_password == "Password" | config_password == "Config Password" | phone == "Phone" )
+            {
+                MessageBox.Show("Vui lòng điền đủ thông tin !", "Thông báo", MessageBoxButtons.OK);
+                txtUser.Focus();
+            }
+            if (password != config_password)
+            {
+                MessageBox.Show("Mật khẩu và Mật khẩu xác nhận phải trùng nhau", "Thông báo", MessageBoxButtons.OK);
+                txtRePassword.Clear();
+                txtRePassword.Focus();
+            }
+
+            Account_BLL acc = new Account_BLL();
+            if (acc.SignUp(username, password, phone))
+            {
+                MessageBox.Show("Đăng Ký Thành Công", "Success !!!", MessageBoxButtons.OK);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông Báo", MessageBoxButtons.OK);
+                txtUser.Focus();
+            }
+
+            
 
         }
 
